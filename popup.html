@@ -3,45 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Radio Player</title>
+    <title>Worldwide Radio</title>
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
     <div class="container">
       <h1>Worldwide Radio</h1>
 
-      <div class="station-list">
-        <button class="station-btn" data-url="https://stream-uk1.radioparadise.com/mp3-192">
-          Radio Paradise (US)
-        </button>
+      <div class="search-box">
+        <input id="searchInput" type="text" placeholder="Search stations (e.g. jazz, news, rock)" />
+        <button id="searchBtn" class="primary-btn">Search</button>
+      </div>
 
-        <button class="station-btn" data-url="https://stream.live.vc.bbcmedia.co.uk/bbc_world_service">
-          BBC World Service (UK)
-        </button>
+      <div class="search-results">
+        <h2>Public Stations</h2>
+        <div id="stationResults" class="station-list"></div>
+      </div>
 
-        <button class="station-btn" data-url="https://npr-ice.streamguys1.com/live.mp3">
-          NPR News (US)
-        </button>
+      <div class="favorites-box">
+        <h2>Favorites</h2>
+        <div id="favoriteList" class="station-list small-list"></div>
+      </div>
 
-        <button class="station-btn" data-url="https://st01.sslstream.dlf.de/dlf/01/128/mp3/stream.mp3">
-          Deutschlandfunk (Germany)
-        </button>
-
-        <button class="station-btn" data-url="http://direct.franceculture.fr/live/franceculture-midfi.mp3">
-          France Culture (France)
-        </button>
-
-        <button class="station-btn" data-url="https://cbc_r1_tor.akacast.akamaistream.net/7/385/451661/v1/rc.akacast.akamaistream.net/cbc_r1_tor">
-          CBC Radio One (Canada)
-        </button>
-
-        <button class="station-btn" data-url="https://voa-ingest.akamaized.net/hls/live/2033874/voa1/master.m3u8">
-          VOA News (USA)
-        </button>
-
-        <button class="station-btn" data-url="https://media-ice.musicradio.com/ClassicFMMP3">
-          Classic FM (UK)
-        </button>
+      <div class="custom-box">
+        <h2>Add Your Own Station</h2>
+        <input id="customName" type="text" placeholder="Station name" />
+        <input id="customUrl" type="text" placeholder="https://example.com/radio-stream" />
+        <button id="addCustomBtn" class="primary-btn">Add Station</button>
+        <div id="customList" class="station-list small-list"></div>
       </div>
 
       <div class="controls">

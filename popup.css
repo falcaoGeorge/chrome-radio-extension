@@ -6,50 +6,110 @@ body {
 }
 
 .container {
-  width: 340px;
+  width: 360px;
   padding: 16px;
   box-sizing: border-box;
 }
 
 h1 {
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   font-size: 22px;
   text-align: center;
+}
+
+h2 {
+  margin: 12px 0 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #93c5fd;
+}
+
+.search-box,
+.custom-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.search-box {
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #111827;
+  color: white;
+}
+
+.primary-btn,
+.station-btn,
+.stop-btn,
+.minor-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+  min-width: 80px;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
 }
 
 .station-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-height: 460px;
+  gap: 8px;
+  max-height: 220px;
   overflow-y: auto;
+  margin-bottom: 10px;
 }
 
-.station-btn,
-.stop-btn {
-  border: none;
-  border-radius: 8px;
-  padding: 10px 12px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 0.2s ease;
+.station-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .station-btn {
-  background: #2563eb;
+  background: #1d4ed8;
   color: white;
+  flex: 1;
   text-align: left;
 }
 
 .station-btn:hover {
-  background: #1d4ed8;
+  background: #1e40af;
+}
+
+.minor-btn {
+  background: #334155;
+  color: white;
+  min-width: 52px;
+}
+
+.minor-btn:hover {
+  background: #475569;
 }
 
 .stop-btn {
   background: #ef4444;
   color: white;
   width: 100%;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .stop-btn:hover {
@@ -68,4 +128,8 @@ h1 {
 audio {
   width: 100%;
   margin-top: 12px;
+}
+
+.small-list {
+  max-height: 120px;
 }
