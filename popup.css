@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.container {
+  width: 320px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.station-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.station-btn,
+.stop-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.station-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.station-btn:hover {
+  background: #1d4ed8;
+}
+
+.stop-btn {
+  background: #ef4444;
+  color: white;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.stop-btn:hover {
+  background: #dc2626;
+}
+
+.status-box {
+  margin-top: 12px;
+  padding: 10px;
+  background: #1e293b;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 12px;
+}

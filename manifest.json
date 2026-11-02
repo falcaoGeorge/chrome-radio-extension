@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Radio Player",
+  "version": "1.0.0",
+  "description": "Simple radio extension for browser streaming",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Radio Player",
+    "default_popup": "popup.html"
+  }
+}
