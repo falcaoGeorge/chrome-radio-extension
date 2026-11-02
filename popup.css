@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  width: 320px;
+  width: 340px;
   padding: 16px;
   box-sizing: border-box;
 }
@@ -21,6 +21,8 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-height: 460px;
+  overflow-y: auto;
 }
 
 .station-btn,
@@ -36,6 +38,7 @@ h1 {
 .station-btn {
   background: #2563eb;
   color: white;
+  text-align: left;
 }
 
 .station-btn:hover {
